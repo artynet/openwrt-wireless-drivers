@@ -1,0 +1,25 @@
+From 91fac3182b80ef40d515e9c6c68f646f1b6be456 Mon Sep 17 00:00:00 2001
+From: Arturo Rinaldi <arty.net2@gmail.com>
+Date: Sat, 5 Mar 2022 04:19:20 +0100
+Subject: [PATCH 2/3] use kernel byteorder
+
+---
+ include/drv_types.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/drv_types.h b/include/drv_types.h
+index e37762f..9518fa4 100644
+--- a/include/drv_types.h
++++ b/include/drv_types.h
+@@ -25,7 +25,7 @@
+ #include <drv_conf.h>
+ #include <basic_types.h>
+ #include <osdep_service.h>
+-#include <rtw_byteorder.h>
++#include <asm/byteorder.h>
+ #include <wlan_bssdef.h>
+ #include <wifi.h>
+ #include <ieee80211.h>
+-- 
+2.35.0
+
